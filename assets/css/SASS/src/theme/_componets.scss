@@ -1,0 +1,547 @@
+/* COMPONETS */
+/* ===================================== */
+
+/* - Logo - */
+
+.logo {
+	width: 60px;
+	height: auto;
+	z-index:99;
+	cursor: pointer;
+}
+
+/* - Splash headers - */
+
+.full-height {
+	/* Firefox */
+	height: -moz-calc(100vh - 357px);
+	/* WebKit */
+	height: -webkit-calc(100vh - 357px);
+	/* Opera */
+	height: -o-calc(100vh - 357px);
+	/* Standard */
+	height: calc(100vh - 357px);
+	width: 100%;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+}
+
+.full-height-video {
+	/* Firefox */
+	height: -moz-calc(100vh - 0px);
+	/* WebKit */
+	height: -webkit-calc(100vh - 0px);
+	/* Opera */
+	height: -o-calc(100vh - 0px);
+	/* Standard */
+	height: calc(100vh - 0px);
+	width: 100%;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width:768px) {
+	.full-height {
+		/* Firefox */
+		height: -moz-calc(100vh - 0px);
+		/* WebKit */
+		height: -webkit-calc(100vh - 0px);
+		/* Opera */
+		height: -o-calc(100vh - 100px);
+		/* Standard */
+		height: calc(100vh - 0px);
+		width: 100%;
+	}
+}
+
+/* - Body Background - */
+
+body {
+	background-image: url("../images/background-pattern.png");
+}
+
+header {
+		z-index: 999 !Important; /* Fix for fixed footer */
+}
+
+/* - Sections - */
+
+/* - General Section Classes - */
+
+.section {
+	position: relative;
+	padding: 96px 0;
+	z-index: 9999999 !important;
+		&.section-dark{
+			background-color: $color-dark-light;
+		}
+		&.section-light {
+			background-color: $color-light;
+		}
+		&.section-background-pattern {
+			background-image: url("../images/background-pattern.png");
+			padding-top: 0 !important
+		}
+}
+
+section {
+	z-index: 0 !Important; /* Fix for fixed footer */
+}
+
+.grid-section {
+	position: relative;
+	z-index: 999999999 !important;
+	background-image: url("../images/background-pattern.png");
+	padding-bottom: 96px;
+}
+
+.section-background-pattern {
+	position: relative;
+	z-index: 9999999 !important;
+}
+
+/* -- Section Decorations -- */
+
+[class*="decor-"] {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	left: 0;
+		svg {
+			height: 101%; // fix rendering in ie and firefox
+		}
+}
+
+.decor-top {
+	bottom: 100%;
+}
+
+.decor-bottom {
+	top: 100%;
+}
+
+.decor {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* - Sections height - */
+
+.section-short {
+	padding: 60px 0;
+}
+
+.section-tiny {
+	padding: 24px 0;
+}
+
+.section-nopadding {
+	padding: 0 !important;
+}
+
+/* - Full height Sections - */
+
+.section-fullheight {
+	min-height: 100vh;
+}
+
+
+// Vertical allignment rows
+
+@media (min-width: 1400px) {
+	.section {
+		padding: 120px 0;
+	}
+	.section-short {
+		padding: 72px 0;
+	}
+	.section-tiny {
+		padding: 24px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding: 60px 0;
+	}
+	.section-short {
+		padding: 48px 0;
+	}
+	.section-tiny {
+		padding: 24px 0;
+	}
+	[class*="decor-"] {
+		height: 36px;
+	}
+	.container {
+		padding: 0 20px;
+	}
+	.section .section .container {
+		padding: 0;
+		width: auto;
+	}
+}
+
+/* - Icon Block - */
+
+.icon-block {
+	color:$text-color;
+	cursor: default;
+	max-width:340px;
+}
+
+.icon-block-wrap {
+	position: relative
+}
+
+.icon-block p {
+	color:$text-color-semi;
+	margin: 0 auto;
+	padding-left: 64px
+}
+
+.icon-block i {
+	opacity: .7;
+	font-size: 45px;
+	line-height: 0;
+	float: left
+}
+
+.icon-block-title {
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $text-dark;
+	padding-top: 0px;
+	padding-left: 64px
+}
+
+/* .icon-block:after {
+	content:'';
+	display: block;
+	width: 50px;
+	height: 10px;
+	outline:1px solid $color-primary;
+	position: relative;
+	margin: 24px auto;
+	@include transition(.2s);
+	opacity:.7;
+}
+ */
+
+.icon-block-vertical{
+	color:$text-color;
+	cursor: default;
+	max-width:340px;
+	text-align: center;
+}
+
+.icon-block-wrap {
+	position: relative
+}
+
+.icon-block-vertical p {
+	color:$text-color-semi;
+	margin: 0 auto;
+}
+
+.icon-block-vertical i {
+	opacity: .7;
+	font-size: 45px;
+	line-height: 0;
+	margin-bottom: 10px;
+}
+
+.icon-block-vertical-title {
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $text-dark;
+	padding-top: 0px;
+}
+
+ .icon-block-vertical:after {
+	content:'';
+	display: block;
+	display:block;
+	width: 54px;
+	height: 6px;
+	text-align: center;
+	background: 0 center repeat-x    url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="6px" viewBox="0 0 9 6" enable-background="new 0 0 9 6" xml:space="preserve"><polygon opacity="0.5" points="4.5,4.5 0,0 0,1.208 4.5,5.708 9,1.208 9,0 "/></svg>');
+
+	position: relative;
+	margin: 24px auto;
+	@include transition(.2s);
+	opacity:.7;
+}
+
+
+/* - Blockquotes - */
+
+blockquote {
+	border:none;
+	margin: 0;
+}
+
+blockquote p {
+	font-size: 16px;
+	line-height: 24px
+}
+
+blockquote cite {
+	display: block;
+	margin-top: 24px;
+	font-size: 12px;
+	font-style: normal
+}
+
+cite img {
+	margin-right: 5px
+}
+
+/* - Video Homepage - */
+
+.video { 
+	overflow: hidden !important
+}
+
+.video iframe {
+	position: absolute; 
+	z-index: 0; 
+	width: 120%; 
+	left:-10%; 
+	top:0;
+	overflow: hidden !important
+}
+
+/* 
+.video .video-overlay{ 
+	width:100%; 
+	height:100%; 
+	position:absolute;
+	background:#171720; 
+	opacity:0.95; 
+	left:0; 
+	top:0; 
+	z-index:20;
+}
+ */
+/* - Side Image - */
+
+.side-image {
+	height: 400px;
+	position: relative;
+}
+
+.side-image-content {
+	padding: 0px 35px 35px 35px;
+}
+
+.side-image-title {
+	text-transform: uppercase;
+	margin-top: 65px;
+}
+
+.side-image-title i{
+	line-height: 56px;
+	color:$color-primary;
+	opacity: .7;
+	padding: 1px !important;
+	display: block !important
+}
+
+.side-image-content p {
+	margin: 20px 0px;
+	color:darken($text-dark, 15%);
+	opacity:.8;
+}
+
+/* - Pagination - */
+
+.pagination a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.page-numbers {
+	margin-right: 10px;
+	padding: 7px 14px;
+	color: darken($color-primary, 5%);
+	border:1px solid $color-primary
+}
+
+.page-numbers:hover {
+	background-color: rgba($color-primary, .8);
+	color:#fff !Important;
+}
+
+.page-numbers.current {
+	color:#fff !important;
+	background-color: $color-primary;
+}
+
+.page-numbers.current:hover {
+
+	color: rgba($color-primary, 1);
+}
+
+/* - Banners - */
+
+.banner {
+	min-height:400px;
+}
+
+.banner h4 {
+	margin-top: 15px;
+}
+
+/* - Paragraph with Note - */
+
+.note-icon {
+	padding-left: 48px;
+	position: relative;
+}
+
+.note-icon i {
+	position: absolute;
+	left: 0;
+	top: -20px
+}
+
+/* - Twitter Widget - */
+
+.twitter-widget {
+	min-height: 200px;
+	height: auto;
+}
+
+.ion-social-twitter{
+	z-index: 999;
+	position: relative;
+}
+
+.twitter-widget-header {
+	font-size: 30px
+}
+
+.twitter-widget .swiper-pagination  {
+	padding-top: 200px !important;
+}
+
+.twitter-widget .tweet {
+	color:$text-color-semi;
+	padding: 50px 0 !important
+}
+
+.twitter-widget .tweet-footer {
+	color:$text-color-semi;
+	opacity:.8;
+	display: block;
+}
+
+/* - Mouse Icon - */
+
+.mouse-icon {
+	position:absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 24px;
+	z-index: 9999 !important;
+}
+
+.mouse-icon i {
+	cursor: pointer;
+	animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+}
+
+/* - Figure Team Members - */
+
+.team-member p {
+	max-width:340px;
+	margin: 0 auto;
+	margin-top: 20px
+}
+
+.team-member a i {
+	font-size: 16px;
+	padding-right: 10px;
+	opacity: .8;
+}
+
+.team-member a {
+	padding-top: 20px !important
+}
+
+/* - Parallax Home Page - */
+
+.parallax-image {
+	z-index:9;
+}
+
+@media (max-width:768px) {
+	.parallax-image {
+		position: absolute !important;
+		left: 0px !Important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.small-parallax-image-hidden {
+		display: none !Important;
+	}
+}
+
+/* - Social Icons - */
+
+ul.social-icons {
+	list-style:none;
+	display: inline-block;
+	margin-top: 50px;
+	position: absolute;
+	padding-left: 0 !important
+}
+
+ul.social-icons li {
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+ul.social-icons li a i {
+	font-size: 18px
+}
+
+ul.social-icons li{
+	margin:0px 10px;
+}
+
+ul.social-icons li:first-child{
+	margin-left: 0 !important
+}
+
+li.social-icons:last-child {
+	margin-right: 0px !Important;
+}
+
+@media (max-width:661px) {	
+	ul.social-icons li {
+		margin:0px 5px;
+	}
+	ul.social-icons {
+		margin-top: -50px;
+	}
+	.toggle-menu {
+		margin-top: -50px !important;
+	}
+}

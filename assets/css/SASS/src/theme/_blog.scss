@@ -1,0 +1,146 @@
+/* BLOG */
+/* ===================================== */
+
+.blog-post {
+	max-width: 340px;
+	height: 400px;
+	margin: 10px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	@include underline-from-center;
+	&.blog-post-dark {
+		background-color: darken($color-dark-light,5%);
+	}
+	&.blog-post-light {
+		background-color: darken($color-light,1%);
+	}
+}
+
+.blog-post-single {
+	max-width: 980px;
+	width: 100% !important;
+	min-height: 400px;
+	height: auto;
+	padding-left: 24px !important;
+	padding-right: 24px !important;
+	padding-bottom: 24px !important;
+	&.blog-post-dark {
+		background-color: darken($color-dark-light,5%);
+	}
+	&.blog-post-light {
+		background-color: darken($color-light,1%);
+	}
+}
+
+.author-avatar {
+	z-index: 9999 !important;
+	position: relative
+}
+
+.blog-post-image {
+	max-width: 340px;
+	height: 238px;
+}
+
+.blog-post-single-image {
+	max-width: 980px;
+	height: 238px;
+	padding-top: 48px;
+	display: block !important;
+	margin-bottom: 140px
+}
+
+@media (max-width: 1191px) {
+	.blog-post-single-image {
+		margin-bottom: 24px;
+		padding-bottom: 0 !important;
+		height: auto; 
+	}
+}
+
+.blog-post-info {
+	padding: 10px;
+}
+
+.blog-post-info a.btn {
+	position: absolute;
+	bottom:10px;
+}
+
+.blog-post-info .blog-post-title {
+	color:$color-dark !important;
+}
+
+.blog-post-info span.blog-read-time {
+	position: absolute;
+	bottom:10px;
+	right: 10px;
+	font-size: 12px;
+	opacity: .7;
+}
+
+.blog-post-info span.blog-read-time i {
+	padding: 1px
+}
+
+.blog-post-info .blog-post-description{
+	margin-top: 24px;
+	font-size: 14px
+}
+
+.blog-post-featured {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/blog-featured.png"); 
+	width: 25px;
+	height: 25px;
+}
+
+/* - Blog tags - */
+
+ul.blog-post-tags {
+	list-style: none;
+	padding-left: 0 !Important;	
+}
+
+ul.blog-post-tags i{
+	margin-left: 5px
+}
+
+ul.blog-post-tags li {
+	display: inline-block;
+	color:$text-color;
+}
+
+/* - Blog social share - */
+
+ul.blog-post-social-share {
+	list-style: none;
+	padding-left: 0 !Important;	
+}
+
+ul.blog-post-social-share li {
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+ul.blog-post-social-share li a{
+
+	margin-right: 15px !important
+}
+
+ul.blog-post-social-share li i {
+	font-size: 20px;
+	@include transition(.2s);
+	&:hover {
+		color:$color-primary;
+	}
+}
+
+.share-widget span {
+	font-size: 20px;
+	opacity: .8;
+	font-weight: 400
+}

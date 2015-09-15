@@ -1,0 +1,194 @@
+/* PORTFOLIO HOVER EFFECT */
+/* ===================================== */
+
+.portfolio-item .portfolio-item-overlay {
+	opacity: 0;
+	background-color: $color-light;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	bottom: 12px;
+	right: 12px;
+	@include transition (.2s);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+	opacity: 1;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.portfolio-spaced-item  .portfolio-item-overlay {
+	opacity: 0;
+	background-color: $color-light;
+	position: absolute;
+	top: 22px;
+	left: 22px;
+	bottom: 22px;
+	right: 22px;
+	@include transition (.2s);
+}
+
+.portfolio-spaced-item:hover .portfolio-item-overlay {
+	opacity: 1;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.portfolio-spaced > .portfolio-spaced-item{
+	padding: 10px
+}
+
+/* - Overlay setup - */
+
+.portfolio-item-overlay span.portfolio-item-overlay-title {
+	position: relative;
+	margin-bottom: 15px;
+	color:$text-dark;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.portfolio-item-overlay span.portfolio-item-overlay-subtitle {
+	position: relative;
+	color:$text-dark;
+	visibility: visible;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.portfolio-item-overlay:hover span.portfolio-item-overlay-subtitle {
+	animation:fadeInUp .2s;
+	-webkit-animation: fadeInUp .2s;
+}
+
+@media (max-width:700px) {
+	.portfolio-item-overlay span.portfolio-item-overlay-subtitle {
+		visibility: hidden
+	}
+}
+
+.portfolio-overlay-inner {
+	height: 100%;
+	width: 100% !Important;
+	position: relative;
+}
+
+/* - Single page - */
+
+.work-single-icon-block {
+	position: relative;
+}
+
+.work-single-icon-block hr{
+	color:blue;
+	margin: 40px 0
+}
+
+.work-single-icon-block i {
+	margin-top: 10px;
+	opacity:.5;
+	@include transition(.2s);
+/* 	&:hover {
+		opacity:1;
+		color:$color-primary;
+	} */
+}
+
+.work-single-icon-block-title {
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: $text-dark;
+	margin: 15px 0px 10px 0px;
+}
+
+.work-single-icon-block-info {
+	padding-left:0px
+}
+
+.work-single-icon-block-info p{
+	margin-top: 0;
+	color:$text-color-semi;
+}
+
+.padding-fix {
+	padding: 1px
+}
+
+/* - Previous Next - */
+
+.previous-work {
+
+}
+
+.previous-work a{
+	font-size: 14px
+}
+
+.previous-work img{
+	position: absolute;
+	left:-300px;
+	display: none;
+}
+
+.previous-work a:hover .previous-work img{
+	display: block;
+	left: 10px;
+}
+
+.work-nav-desc {
+	padding: 0 23px;
+	color:$text-color-semi;
+	font-size: 12px
+}
+
+/* -Portfolio Single Share - */
+
+.work-single-share {
+	list-style: none;
+	display: inline-block;
+	padding-left: 0 !important;
+		margin-bottom: -10px
+}
+
+.work-single-share li {
+	list-style: none;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.work-single-share li a i{
+	font-size: 10px;
+		color:$text-color-semi
+}
+
+.work-single-share li a {
+	padding-top: 5px !important;
+	margin-top: 5px !important;
+	display: inline-block;
+	vertical-align: bottom
+}
+
+.work-single-share li .counter {
+	display: inline-block !important;
+	font-size: 12px;
+	margin-right: 2px;
+	color:$text-color-semi
+}
+
+.work-single-share li:not(:first-child) {
+	padding-left: 10px;
+}
+
