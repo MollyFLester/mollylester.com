@@ -19,7 +19,7 @@ This is the file you need to edit to change the look of the theme.
  1. Typography
  2. Header
  3. Footer 
- 4. Componets
+ 4. Components
  5. Utilities
  6. Divider
  7. Background Images
@@ -156,11 +156,15 @@ object {
 .full-height object {
   margin-top: 15px; }
 
+.bg-color{
+  background-color: green;
+  z-index: -999999;
+}
+
 /* - Links - */
 a {
   text-decoration: none;
   color: #eb4246 !important;
-  font-size: 12px;
   text-transform: uppercase;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -190,6 +194,11 @@ a.border-link {
   a.border-link:active, a.border-link:focus {
     outline: none;
     text-decoration: none; }
+
+a.link-dark-bg{
+  text-decoration: underline;
+  color: white !important;
+}
 
 /* - Form elements - */
 select,
@@ -251,8 +260,6 @@ button:active {
   border: none !important; }
 
 /* - Buttons - */
-.btn {
-  font-size: 12px !important; }
 
 /* - Pre and code - */
 pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
@@ -278,8 +285,9 @@ pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
 
 /* - Font size classes - */
 .big {
-  font-size: 22px;
-  line-height: 0.8; }
+  font-size: 57px;
+  line-height: 1.3;
+  padding: 0.3em; }
 
 .bigger {
   font-size: 32px;
@@ -517,7 +525,7 @@ pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
 
 header.nav-top {
   position: relative;
-  padding: 40px;
+  padding: 50px;
   z-index: 9 !important; }
 
 @media (max-width: 661px) {
@@ -526,10 +534,10 @@ header.nav-top {
     padding-left: 23px; }
 
   header.nav-top-video ul.social-icons {
-    top: 5px; } }
+    top: 5px; } 
 header.nav-top-video {
   position: relative;
-  padding: 30px; }
+  padding: 30px; }}
 
 header.nav-top-video ul.social-icons {
   position: absolute;
@@ -728,8 +736,10 @@ header.nav-top-video ul.social-icons {
   top: 20px;
   right: 20px; }
 
+
 /* FOOTER */
 /* ===================================== */
+
 .footer-margin {
   margin-bottom: 300px; }
 
@@ -754,6 +764,10 @@ footer {
 
 footer .icon-block-title {
   margin-top: 30px; }
+
+footer .go-top{
+  cursor: pointer;
+}
 
 /* -  Copyright - */
 .copyright {
@@ -905,7 +919,7 @@ section {
 
 @media (min-width: 1400px) {
   .section {
-    padding: 120px 0; }
+    padding: 60px 0; }
 
   .section-short {
     padding: 72px 0; }
@@ -1006,7 +1020,6 @@ section {
   width: 54px;
   height: 6px;
   text-align: center;
-  background: 0 center repeat-x url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="6px" viewBox="0 0 9 6" enable-background="new 0 0 9 6" xml:space="preserve"><polygon opacity="0.5" points="4.5,4.5 0,0 0,1.208 4.5,5.708 9,1.208 9,0 "/></svg>');
   position: relative;
   margin: 24px auto;
   -moz-transition: 0.2s;
@@ -1187,12 +1200,15 @@ cite img {
 
   .small-parallax-image-hidden {
     display: none !Important; } }
+
 /* - Social Icons - */
+.social{
+  min-height: 34px;
+}
+
 ul.social-icons {
   list-style: none;
   display: inline-block;
-  margin-top: 50px;
-  position: absolute;
   padding-left: 0 !important; }
 
 ul.social-icons li {
@@ -1231,8 +1247,14 @@ li.social-icons:last-child {
 .margin-bottom {
   margin-bottom: 24px !important; }
 
+.margin-bottom-popout {
+  margin-bottom: 78px !important; }
+
 .margin-top {
   margin-top: 24px !important; }
+
+.margin-top-popout {
+  margin-top: 78px !important; }
 
 .margin-left {
   margin-left: 24px !important; }
@@ -1550,6 +1572,10 @@ img {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.threedots{
+  display: block;
+}
 
 .ion-alert:before {
   content: "\f101"; }
@@ -3767,6 +3793,17 @@ img {
 .btn {
   border: 0 !important; }
 
+.btn-big{
+  margin-top: 40px;
+  width: 240px;
+  height: 45px;
+  font-weight: 900 !important;
+}
+
+.secondary-link{
+  margin-top: 15px;
+}
+
 .btn-default {
   background: #ecf0f1 !important;
   color: #171720 !important;
@@ -4418,6 +4455,7 @@ ul.blog-post-social-share li i {
   margin: 10px;
   display: inline-block;
   cursor: pointer;
+  position: relative;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -4425,8 +4463,38 @@ ul.blog-post-social-share li i {
   -ms-user-select: none;
   user-select: none; }
 
+.grid .col-sm-6 figure, .grid .col-xs-12 figure{
+  height: 100%;
+}  
+
 .grid figure.active {
   opacity: 0; }
+
+.grid figcaption{
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: inherit;
+  font-size: 24px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.grid figcaption h3{
+  line-height: 10px;
+  color: white;
+  -ms-transform: translate(0px,70px); /* IE 9 */
+  -webkit-transform: translate(0px,70px); /* Safari */
+  transform: translate(0px,70px); /* Standard syntax */
+}
+
+.grid figcaption:hover{
+  background-color: #f63c3c;
+  opacity: 1;
+}
 
 .grid .placeholder {
   pointer-events: none;
@@ -4508,6 +4576,28 @@ ul.blog-post-social-share li i {
   pointer-events: auto;
   visibility: visible; }
 
+.content .big-pic{
+  margin-bottom: 100px;
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+}
+
+.jumbotron{
+  height: 500px;
+}
+
+.jumbotron .container{
+  background: url('http://brightcove.vo.llnwd.net/d21/unsecured/media/1033249144001/1033249144001_1937277925001_ari-origin05-arc-170-1351721501066.jpg?pubId=1033249144001') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  top:0;
+  left:0;
+}
+
+
 .content > div {
   z-index: 10 !important;
   position: absolute;
@@ -4540,16 +4630,20 @@ ul.blog-post-social-share li i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.behance-icon{
+  width: 23px;
+}
+
 .close-content {
   position: fixed;
   z-index: 1000;
   top: 0;
   right: 24px;
-  font-size: 22px;
+  font-size: 57px;
   color: #eb4246;
   cursor: pointer;
   pointer-events: none;
-  padding: 1em;
+  padding: 0.3em;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s; }

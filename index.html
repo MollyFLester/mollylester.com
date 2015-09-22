@@ -14,7 +14,7 @@
 		<!-- GOOGLE FONTS -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100' rel='stylesheet' type='text/css'>
 		<!-- CSS FILES -->
-		<link rel="stylesheet" href="assets/css/theme.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<!-- Modenizr -->
 		<script src="assets/js/modernizr.custom.js"></script>
@@ -29,83 +29,11 @@
 					<i class="icon ion-ios-close-outline big"></i>
 				</a>
 				<ul class="nav navbar-nav">
-					<li class="dropdown">
-						<a class="expander" href="#">
-							HOME
-						</a>
-						<div class="expand-content">
-							<ul role="menu">
-								<li>
-									<a href="home-portfolio.html">
-										PORTFOLIO
-									</a>
-								</li>
-								<li>
-									<a href="home-slider.html">
-										SLIDER
-									</a>
-								</li>
-								<li>
-									<a href="home-video.html">
-										VIDEO
-									</a>
-								</li>
-								<li>
-									<a href="home-static.html">
-										STATIC
-									</a>
-								</li>
-								<li>
-									<a href="home-parallax.html">
-										PARALLAX
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<!-- End dropdown --> 
-					<li><a href="about.html">STUDIO</a></li>
-					<li><a href="specialties.html">SPECIALTIES</a></li>
-					<li class="dropdown">
-						<a class="expander" href="#">
-							PORTFOLIO
-						</a>
-						<div class="expand-content">
-							<ul role="menu">
-								<li>
-									<a href="portfolio-masonry.html">
-										MASONRY
-									</a>
-								</li>
-								<li>
-									<a href="portfolio-spaced.html">
-										SPACED
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<!-- End dropdown --> 
-					<li class="dropdown">
-						<a class="expander" href="#">
-							BLOG
-						</a>
-						<div class="expand-content">
-							<ul role="menu">
-								<li>
-									<a href="blog.html">
-										BLOG
-									</a>
-								</li>
-								<li>
-									<a href="blog-single.html">
-										BLOG-SINGLE
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<!-- End dropdown --> 
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="blog-single.html">BLOG</a></li>
+					<!-- KEEP FOR GRID--> 
+					<div class="expand-content"></div>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 				<!-- End navbar-nav -->
@@ -120,24 +48,7 @@
 						<span></span>
 						<span></span>
 					</button>
-					<ul class="social-icons pull-left">
-						<li>
-							<a href="#">
-								<i class="icon text-white tiny ion-social-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="icon text-white tiny ion-social-dribbble"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="icon text-white tiny ion-social-pinterest"></i>
-							</a>
-						</li>
-					</ul >
-					<img src="assets/images/logo/logo.png" alt="Image" width="135" class="center-block" style="">
+					<img src="assets/images/logo/logo.png" alt="Image" width="135" class="center-block">
 				</nav>
 			</div>
 		</header>
@@ -147,6 +58,10 @@
 					<div class="col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="0s">
 						<figure>
 							<img src="assets/images/340x227.gif" alt="img01"/>
+							<figcaption>
+								<h3>Camera</h3>
+								<span>Jacob Cummings</span>
+							</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">
@@ -155,14 +70,18 @@
 						</figure>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+						<div class="replaceLI">
 						<figure>
 							<img src="assets/images/340x227.gif" alt="img02"/>
 						</figure>
+						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
+						<div class="replaceLI">
 						<figure>
 							<img src="assets/images/340x227.gif" alt="img04"/>
 						</figure>
+						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">
 						<figure>
@@ -193,50 +112,102 @@
 			</div> <!-- /grid-wrap -->
 			<div class="content">
 				<div>
-					<div class="container">
+					<!-- HEADER IMAGE ON CONTENT POP OUT -->
+					<div class="jumbotron">
+						<div class="container"></div>
+					</div>
+					<!-- MAIN CONTENT OF PAGE -->
+					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center margin-top">
-								<img src="assets/images/logo/logo-dark.png" alt="Work logo" class="center-block" width="100">
-								<p class="lead margin-top padding-top text-dark">
-									The first project. Pretty easy to setup eh?
+							<div class="col-12">
+							<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1 text-center margin-top">
+								<h1 class="black super text-caps">HUBBLE</h1>
+								<p class=" text-left lead margin-top padding-top text-dark">
+									Online Leaning has always had it's struggles. Lorem ipsum dolor sit amet, usu ex iusto corpora offendit, quod sonet et cum. Pri quando aliquip oblique no, graece scaevola in pro, feugiat laoreet cu qui. Velit latine appetere his eu, mea no exerci legimus, mutat mollis dissentiunt mel ut. Ex vis quaeque reformidans. Nec mediocrem erroribus ex, ex sale everti vel. Vix at mnesarchum assueverit.?
 								</p>
 							</div>
-							<div class="col-md-12">
+							</div>
+							<div class="col-md-10 margin-bottom-popout col-md-offset-1">
 								<div class="col-md-4 margin-top work-single-icon-block text-center">
 									<i class="icon ion-ios-person-outline bigger"></i>
 									<div class="work-single-icon-block-info">
-										<h3 class="work-single-icon-block-title">Client</h3>
-										<p>RECT Studio &#169; <br>
-										Sydney</p>
+										<h3 class="work-single-icon-block-title">Role</h3>
+										<p>UX Researcher
+										<br>Interaction Designer</p>
 									</div>
 								</div>
 								<div class="col-md-4 margin-top work-single-icon-block text-center">
 									<i class="icon ion-ios-list-outline bigger"></i>
 									<div class="work-single-icon-block-info">
-										<h3 class="work-single-icon-block-title">Requirement</h3>
-										<p>A modern website.
-										<br>And a succesfull campaign</p>
+										<h3 class="work-single-icon-block-title">Deliverables</h3>
+										<p>Personas / Task Flows /
+										<br> Wireframes / Prototypes</p>
 									</div>
 								</div>
 								<div class="col-md-4 margin-top work-single-icon-block text-center">
 									<i class="icon ion-ios-navigate-outline bigger padding-fix"></i>
 									<div class="work-single-icon-block-info">
-										<h3 class="work-single-icon-block-title">Project</h3>
-										<p><a href="#" class="border-link">Night Co. &#8594;</a></p>
+										<h3 class="work-single-icon-block-title">Client</h3>
+										<p><a href="#" class="border-link">Designation Labs</a></p>
 									</div>
 								</div>
-								<!-- <div class="col-md-12">
-									<span class="divider-1 center-block margin-top "></span>
-								</div> -->
 							</div>
-							<div class="col-md-12 margin-top">
+							<div class="col-md-12 bg-color">
+							<div class="col-md-8 col-md-offset-2 margin-top-popout">
+								<h2 class="text-caps text-center bold">RESEARCH</h2>
+								<p class=" text-left lead margin-top padding-top text-dark">
+									Online Leaning has always had it's struggles. Lorem ipsum dolor sit amet, usu ex iusto corpora offendit, quod sonet et cum. Pri quando aliquip oblique no, graece scaevola in pro, feugiat laoreet cu qui. Velit latine appetere his eu, mea no exerci legimus, mutat mollis dissentiunt mel ut. Ex vis quaeque reformidans. Nec mediocrem erroribus ex, ex sale everti vel. Vix at mnesarchum assueverit.?
+								</p>
+							</div>
+							<div class="col-md-8 margin-top col-md-offset-2">
 								<img src="http://placehold.it/980x500" alt="Work image" class="center-block"> 
 							</div>
-							<div class="col-md-12 margin-top">
+							<div class="col-md-8 margin-top col-md-offset-2">
+								<div class="col-md-6">
+									<img src="http://placehold.it/980x500" alt="Work image"> 
+								</div>
+								<div class="col-md-6">
+									<img src="http://placehold.it/980x500" alt="Work image"> 
+								</div>
+							</div>
+							<div class="col-md-8 col-md-offset-2 margin-top-popout">
+								<h2 class="text-caps text-center bold">SYNTHESIS</h2>
+								<p class=" text-left lead margin-top padding-top text-dark">
+									Online Leaning has always had it's struggles. Lorem ipsum dolor sit amet, usu ex iusto corpora offendit, quod sonet et cum. Pri quando aliquip oblique no, graece scaevola in pro, feugiat laoreet cu qui. Velit latine appetere his eu, mea no exerci legimus, mutat mollis dissentiunt mel ut. Ex vis quaeque reformidans. Nec mediocrem erroribus ex, ex sale everti vel. Vix at mnesarchum assueverit.?
+								</p>
+							</div>
+							<div class="col-md-8 col-md-offset-2 margin-top">
 								<img src="http://placehold.it/980x500" alt="Work image" class="center-block"> 
 							</div>
-							<div class="col-md-12 margin-top margin-bottom">
+							<div class="col-md-10 col-md-offset-1 margin-top-popout">
+							<div class="col-md-4 margin-top">
+								<div class="icon-block-vertical text-center center-block">
+								<i class="icon super text-primary ion-ios-game-controller-b-outline"></i>
+								<h4 class="black text-caps text-dark icon-block-vertical-title">RESEARCH</h4>
+								<p>Replenish from lights waters moveth said have, winged fish nigha word here t blessed made moved the and creeping, after abs herb have. Won't in be, sea.</p>
+								</div>
+							</div>
+							<div class="col-md-4 margin-top">
+								<div class="icon-block-vertical text-center center-block">
+								<i class="icon super text-primary ion-ios-monitor-outline"></i>
+								<h4 class="black text-caps text-dark icon-block-vertical-title">IDEATE</h4>
+								<p>Of, all herb it. Divide. Behold in don't third of sea without fruitful bearing night and replenish. Hath open form. Stars sea us had meat yielding made that isn't seasons.</p>
+								</div>
+							</div>
+							<div class="col-md-4 margin-top">
+								<div class="icon-block-vertical text-center center-block">
+								<i class="icon super text-primary ion-ios-color-wand-outline"></i>
+								<h4 class="black text-caps text-dark icon-block-vertical-title">EXECUTE</h4>
+								<p>Have form sea moved a fly them the very image. Made under unto him. Without male unto deep over. Kind shall upon brought sea moved can't given. Can't days fly.</p>
+								</div>
+							</div>
+						</div>
+							<div class="col-md-8 col-md-offset-2 margin-top">
 								<img src="http://placehold.it/980x500" alt="Work image" class="center-block"> 
+							</div>
+							<div class="col-md-8 col-md-offset-2 margin-top margin-bottom">
+								<img src="http://placehold.it/980x500" alt="Work image" class="center-block"> 
+							</div>
 							</div>
 						</div>
 					</div>
@@ -637,16 +608,16 @@
 				<span class="icon close-content"></span>
 			</div>
 		</section>
-		<section class="section section-dark">
+		<section class="section section-dark about-section">
 			<div class="container">
 				<div class="row">
 					<header>
 						<div class="col-md-12 text-center margin-bottom">
 							<h2 class="black">
-								ABOUT US
+								MY PROCESS
 							</h2>
 							<p class="text-caps margin-top">
-								A little info about us
+								Interesting, I would like to know <a href="about.html">more</a>
 							</p>
 							<span class="divider-1 center-block margin-top"></span>
 							<span class="divider-1 center-block"></span>
@@ -655,57 +626,25 @@
 					<div class="col-md-4 margin-top">
 						<div class="icon-block-vertical text-center center-block">
 							<i class="icon super text-primary ion-ios-game-controller-b-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">WE PLAY</h4>
+							<h4 class="black text-caps text-dark icon-block-vertical-title">RESEARCH</h4>
 							<p>Replenish from lights waters moveth said have, winged fish nigha word here t blessed made moved the and creeping, after abs herb have. Won't in be, sea.</p>
 						</div>
 					</div>
 					<div class="col-md-4 margin-top">
 						<div class="icon-block-vertical text-center center-block">
 							<i class="icon super text-primary ion-ios-monitor-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">WE DESIGN</h4>
+							<h4 class="black text-caps text-dark icon-block-vertical-title">IDEATE</h4>
 							<p>Of, all herb it. Divide. Behold in don't third of sea without fruitful bearing night and replenish. Hath open form. Stars sea us had meat yielding made that isn't seasons.</p>
 						</div>
 					</div>
 					<div class="col-md-4 margin-top">
 						<div class="icon-block-vertical text-center center-block">
 							<i class="icon super text-primary ion-ios-color-wand-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">WE BRAND</h4>
+							<h4 class="black text-caps text-dark icon-block-vertical-title">EXECUTE</h4>
 							<p>Have form sea moved a fly them the very image. Made under unto him. Without male unto deep over. Kind shall upon brought sea moved can't given. Can't days fly.</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section section-dark section-nopadding container-fluid">
-			<div class="col-md-6 background-vertical-2 section-overlay side-image" data-stellar-background-ratio="0.5">
-			</div>
-			<div class="col-md-6">
-				<div class="side-image-content">
-				<h2 class="side-image-title text-dark black">
-				<i class="icon ion-ios-eye-outline"></i>
-					BRANDING
-				</h2>
-				<p>
-					Seasons. Place replenish creeping fifth image you after god. Abundantly divide beginning herb have that very face appear under divide were. Form their in and them male the a can't beginning given midst. Land it. Open you'll fruitful all moving herb subdue seasons created, earth was for, moving sea, over replenish behold you're place blessed. Firmament beast every fourth meat.
-				</p>
-				<a href="about.html" class="btn btn-link">READ MORE</a>
-				</div>
-			</div>
-		</section>
-		<section class="section section-dark section-nopadding container-fluid">
-			<div class="col-md-6">
-				<div class="side-image-content">
-				<h2 class="side-image-title text-dark black">
-				<i class="icon ion-ios-glasses-outline"></i>
-					DESIGN
-				</h2>
-				<p>
-					Herb god have him us whose likeness beginning void grass wherein, very. Itself gathering you'll fruit beginning open fruitful forth after brought you. May saw moveth one. That. Them their god second moving without two good is divided in. Great may don't, very god female light after seas yielding air beginning had. Grass gathered without lesser, our thing whose, beginning.
-				</p>
-				<a href="about.html" class="btn btn-link">READ MORE</a>
-				</div>
-			</div>
-			<div class="col-md-6 background-vertical-2 section-overlay side-image" data-stellar-background-ratio="0.5">
 			</div>
 		</section>
 		<section class="section banner background-pattern-6">
@@ -714,10 +653,34 @@
 					<header>
 						<div class="col-md-12 text-center">
 							<h2 class="black super text-caps text-white">
-								OUR STUDIO IS AWESOME
+								DROP A LINE
 							</h2>
-							<i class="icon ion-ios-more-outline text-primary hyper"></i>
-							<p class="text-white lead">We do have a strong team, and an awesome studio.</p>
+							<i class="icon ion-ios-more-outline text-primary hyper threedots"></i>
+							<p class="text-white lead">I'd love talk to about design, art, and corgis.</p>
+								<!-- CONTACT FORM -->
+								<div class="col-md-8 col-md-offset-2 margin-top">
+									<form id="contact_form" class="contact-form text-center" method="POST" action="test.php">
+										<div class="col-md-12 form-input-icon">
+											<i class="icon ion-ios-person"></i>
+											<input id="name" name="name" type="text" placeholder="Name" required>
+										</div>
+										<div class="col-md-12 form-input-icon">
+											<i class="icon ion-at"></i>
+											<input id="email" name="email" type="email" placeholder="E-mail" required>
+										</div>
+										<div class="col-md-12 form-textarea-icon">
+											<i class="icon ion-edit"></i>
+											<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+										</div>
+										<div class="col-md-12">
+											<p class="text-white tiny required-message">
+												* Please fill all the fields
+											</p>
+											<input type="submit" class="contact-form-submit btn btn-success" value="SEND">
+										</div>
+										<div id="messages" class="col-md-12"></div>
+									</form>
+								</div>
 						</div>
 					</header>
 				</div>
@@ -727,25 +690,50 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="assets/images/logo/logo.png" width="80" alt="Footer logo" class="center-block margin-top margin-bottom">
+						<img src="assets/images/logo/logo.png" width="80" alt="Footer logo" class="center-block margin-top margin-bottom go-top">
 						<div class="col-md-8 col-md-offset-2 text-center margin-top margin-bottom">
 							<p class="text-white">
-								A studio in which the members are passionated about their designs, clients and coffee.
+								<a href="blog-single.html" class="link-dark-bg">NEWEST BLOG POST</a> | Hey there! Let's talk about corgis
 							</p>
 						</div>
 						<div class="col-md-12">
 							<hr class="copyright-hr">
 						</div>
 					</div>
-					<div class="col-md-6 text-left copyright">
+					<div class="col-md-4 text-left copyright">
 						<p class="text-white small">
 							COPYRIGHTS © 2015
-							 <i class="icon ion-heart text-primary"></i> ZAG STUDIO
+							 <i class="icon ion-heart text-primary"></i> MOLLY LESTER
 						</p>
 					</div>
-					<div class="col-md-6 text-left copyright text-right">
+					<!-- SOCIAL MEDIA BUTTONS -->
+					<div class="col-md-4 text-center social">
+						<ul class="social-icons">
+							<li>
+								<a href="https://www.behance.net/molly_lester">
+									<img src="assets/images/behance.png" alt="BEHANCE" class="behance-icon">
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/molly_f_lester">
+									<i class="icon text-white tiny ion-social-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://instagram.com/molly.f.lester/">
+									<i class="icon text-white tiny ion-social-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon text-white tiny ion-social-tumblr"></i>
+								</a>
+							</li>
+						</ul >
+					</div>
+					<div class="col-md-4 copyright text-right">
 						<p class="text-white small">
-							CREATED BY ANDREWCH
+							HAVE A GREAT DAY
 						</p>
 					</div>
 				</div>

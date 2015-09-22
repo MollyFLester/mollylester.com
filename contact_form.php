@@ -13,17 +13,17 @@ $mail = new PHPMailer;
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 //This is the email that you need to set so PHPMailer will send the email from 
-$mail->Username = 'some_email@email.com';             // SMTP username
-$mail->Password = 'secret';                           // SMTP password
+$mail->Username = 'molly.f.lester@gmail.com';             // SMTP username
+$mail->Password = 'rosebud16!';                           // SMTP password
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;                                    // TCP port to connect to
 // Add the address to send the mail to
-$mail->AddAddress('some_email@email.com');
+$mail->AddAddress('molly.f.lester@gmail.com');
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 $mail->IsHTML(true);                                  // Set email format to HTML
 
 // add your company name here
-$company_name = 'your_company';
+$company_name = 'Molly Lester - UX/UI Design';
 
 // choose which fields you would like to be validated separated by |
 // options required - check input has content valid_email - check for valid email

@@ -15,7 +15,6 @@ Main Theme JS file
 
 jQuery(document).ready(function( $ ) {
 
-
      //Navigation Menu
     //===================
     $('.toggle-menu').jPushMenu({
