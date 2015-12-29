@@ -10,3 +10,5 @@ function changeImage(){
 	}
 
 };
+
+document.getElementById('banner').style.backgroundImage = "url('assets/images/banner.svg')";

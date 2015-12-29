@@ -13,6 +13,7 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- GOOGLE FONTS -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
 		<!-- CSS FILES -->
 		<link rel="stylesheet" href="assets/css/theme.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -23,19 +24,16 @@
 	<body>
 		<nav>
 			<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right text-left" id="side-menu">
-				<!-- LOGO -->
-				<img src="assets/images/logo/logo-dark.png" alt="Image" class="logo">
 				<!-- CLOSE BUTTON -->
 				<a href="#" class="menu-close-btn">
-					<i class="icon ion-ios-close-outline big"></i>
+					<img src="assets/images/close_button.svg" alt="close button"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="blog-single.html">BLOG</a></li>
+					<li><a href="index.html"><h4 class="side-menu-text text-left">HOME</h4></a></li>
+					<li><a href="about.html"><h4 class="side-menu-text text-left">ABOUT</h4></a></li>
+					<li><a href="blog-single.html"><h4 class="side-menu-text text-left">RESUME</h4></a></li>
 					<!-- KEEP FOR GRID--> 
 					<div class="expand-content"></div>
-					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 				<!-- End navbar-nav -->
 			<p class="copyright">2015 © MOLLY LESTER</p>
@@ -49,7 +47,7 @@
 						<span></span>
 						<span></span>
 					</button>
-					<img src="assets/images/logo/logo_pink.png" alt="Image" class="center-block">
+					<img id="logo" src="assets/images/logo/logo_pink.png" alt="Image" class="center-block">
 					<h4 class="text-blue">UX / UI Designer</h4>
 				</nav>
 			</div>
@@ -637,34 +635,34 @@
 							<p class="text-caps margin-top">
 								Interesting, I would like to know <a href="about.html">more</a>
 							</p>
-							<span class="divider-1 center-block margin-top"></span>
+							<span class="divider-1 center-block"></span>
 						</div>
 					</header>
-					<div class="col-md-4 margin-top">
+					<div class="col-md-4 margin-top margin-bottom">
 						<div class="icon-block-vertical text-center center-block">
-							<i class="icon super text-primary ion-ios-game-controller-b-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">RESEARCH</h4>
+							<img src="assets/images/research.svg"/>
+							<h4 class="black text-caps text-gray icon-block-vertical-title">RESEARCH</h4>
 							<p>Replenish from lights waters moveth said have, winged fish nigha word here t blessed made moved the and creeping, after abs herb have. Won't in be, sea.</p>
 						</div>
 					</div>
 					<div class="col-md-4 margin-top">
 						<div class="icon-block-vertical text-center center-block">
-							<i class="icon super text-primary ion-ios-monitor-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">IDEATE</h4>
+							<img src="assets/images/ideate.svg"/>
+							<h4 class="black text-caps text-gray icon-block-vertical-title">IDEATE</h4>
 							<p>Of, all herb it. Divide. Behold in don't third of sea without fruitful bearing night and replenish. Hath open form. Stars sea us had meat yielding made that isn't seasons.</p>
 						</div>
 					</div>
 					<div class="col-md-4 margin-top">
 						<div class="icon-block-vertical text-center center-block">
-							<i class="icon super text-primary ion-ios-color-wand-outline"></i>
-							<h4 class="black text-caps text-dark icon-block-vertical-title">EXECUTE</h4>
+							<img src="assets/images/execute.svg"/>
+							<h4 class="black text-caps text-gray icon-block-vertical-title">EXECUTE</h4>
 							<p>Have form sea moved a fly them the very image. Made under unto him. Without male unto deep over. Kind shall upon brought sea moved can't given. Can't days fly.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section banner background-pattern-6">
+		<section class="section banner" id="banner">
 			<div class="container">
 				<div class="row">
 					<header>
@@ -674,8 +672,7 @@
 								DROP A LINE
 								</a>
 							</h2>
-							<i class="icon ion-ios-more-outline text-primary hyper threedots"></i>
-							<p class="text-white lead">I'd love talk to about design, art, and corgis.</p>
+							<p class="text-caps margin-top">I would love to chat with you</p>
 						</div>
 					</header>
 				</div>
@@ -685,10 +682,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="assets/images/logo/logo.png" width="80" alt="Footer logo" class="center-block margin-top margin-bottom go-top">
 						<div class="col-md-8 col-md-offset-2 text-center margin-top margin-bottom">
 							<p class="text-white">
-								<a href="blog-single.html" class="link-dark-bg">NEWEST BLOG POST</a> | Hey there! Let's talk about corgis
+								<strong>NEWEST BLOG POST</strong>  |  <a href="blog-single.html" class="link-dark-bg">Hey there! Let's talk about corgis </a>
 							</p>
 						</div>
 						<div class="col-md-12">

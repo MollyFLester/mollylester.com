@@ -15,7 +15,7 @@ This is the file you need to edit to change the look of the theme.
 - // TABLE OF CONTENTS // -
 
 ========================================================================
-
+ 0. My General Changes
  1. Typography
  2. Header
  3. Footer 
@@ -55,6 +55,42 @@ This is the file you need to edit to change the look of the theme.
     width:100%; 
     height:100%;
 }
+/* MY GENERAL CHANGES */
+/* ===================================== */
+/* - Logo - */
+
+#logo{
+  padding-left: 30px;
+}
+
+.icon-block-vertical img{
+  width: 85px;
+}
+
+.icon-block-vertical p{
+  padding: 0px 25px;
+  line-height: 24px;
+}
+
+.icon-block-vertical h4{
+  font-size: 27px;
+}
+
+.about-section .container{
+  margin-bottom: 50px;
+}
+
+.banner h2 .mailto{
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 10px !important;
+}
+
+body h4.side-menu-text{
+  color: #0058FF !important;
+  margin-top: 15px;
+}
+
 
 /* GENERAL TYPOGRAPHY RULES */
 /* ===================================== */
@@ -66,10 +102,14 @@ This is the file you need to edit to change the look of the theme.
   color: #5b5656; }
 
 .text-gray {
-  color: #1A1A1A; }
+  color: #36373F; }
 
 .text-primary {
   color: #eb4246 !important; }
+
+.text-white{
+  color: white;
+}
 
 /* - Body typography - */
 body {
@@ -147,13 +187,12 @@ body h4 {
   font-size: 27px;
   font-weight: 500;
   text-transform: uppercase;
-  text-align: center;
-  padding-right: 30px;
-  letter-spacing: 2px; }
+  text-align: center; }
 
 /* Added specifically for title */
 nav h4{
   margin-top: 33px;
+  letter-spacing: 2px
 }
 
 h4 small {
@@ -202,7 +241,7 @@ object {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #eb4246 !important;
+  color: #FF475B !important;
   text-transform: uppercase;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -210,7 +249,7 @@ a {
   transition: 0.2s; }
   a:hover {
     text-decoration: none !important;
-    color: #363F48 !important; }
+    color: #36373F !important; }
   a:active, a:focus {
     outline: none;
     text-decoration: none; }
@@ -234,17 +273,15 @@ a.border-link {
     text-decoration: none; }
 
 a.link-dark-bg{
-  text-decoration: underline;
+  border-bottom: solid 1px white;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding-top: 23px;
   color: white !important;
-}
-
-a.mailto{
-  color: white !important;
-  text-decoration: underline;
 }
 
 a.mailto:hover{
-  color: red !important;
+  border-bottom: #36373F solid 5px !important;
 }
 
 /* - Form elements - */
@@ -343,7 +380,8 @@ pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
 .super {
   font-size: 60px;
   line-height: 0.8;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 60px; }
   .super small {
     font-size: .35em; }
 
@@ -496,7 +534,7 @@ pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
   background: #f8f8f8;
   background-size: cover;
   padding-top: 30px;
-  padding-left: 30px; }
+  padding-left: 50px; }
 
 .cbp-spmenu .logo {
   margin-top: 120px; }
@@ -679,7 +717,7 @@ header.nav-top-video ul.social-icons {
 
 /* content style */
 .cbp-spmenu ul {
-  margin: 60px 0;
+  margin: 150px 0;
   padding: 0;
   list-style: none;
   width: 400px;
@@ -772,8 +810,12 @@ header.nav-top-video ul.social-icons {
 /* - Menu Close Button - */
 .menu-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px; }
+  top: 75px;
+  right: 60px; }
+
+.menu-close-btn img{
+  width: 60px;
+}
 
 
 /* FOOTER */
@@ -790,14 +832,14 @@ header.nav-top-video ul.social-icons {
 
 footer {
   width: 100%;
-  min-height: 300px;
-  height: 300px;
+  min-height: 183px;
+  height: 183px;
   position: relative;
   bottom: 0;
   left: 0;
   z-index: 0 !important; }
   footer.footer-dark {
-    background-color: #2b3239; }
+    background-color: #36373F; }
   footer.footer-semi-dark {
     background-color: #f9f9f9; }
 
@@ -811,7 +853,7 @@ footer .go-top{
 /* -  Copyright - */
 .copyright {
   opacity: .8;
-  padding: 0 30px !important; }
+  padding: 0 60px !important; }
 
 .copyright-hr {
   opacity: 0.1; }
@@ -1035,22 +1077,24 @@ section {
   position: relative; }
 
 .icon-block-vertical p {
-  color: #756f6f;
+  color: #4B4C59;
   margin: 0 auto; }
 
 .icon-block-vertical i {
   opacity: .7;
   font-size: 45px;
   line-height: 0;
-  margin-bottom: 10px; }
+  }
 
 .icon-block-vertical-title {
   display: block;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #333333;
-  padding-top: 0px; }
+  padding-top: 0px;
+  margin-top: 25px;
+  margin-bottom: 13px;
+ }
 
 .icon-block-vertical:after {
   content: '';
@@ -1060,7 +1104,6 @@ section {
   height: 6px;
   text-align: center;
   position: relative;
-  margin: 24px auto;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -1157,7 +1200,8 @@ cite img {
 
 /* - Banners - */
 .banner {
-  min-height: 400px; }
+  margin-top: -55.14px;
+  }
 
 .banner h4 {
   margin-top: 15px; }
@@ -1242,8 +1286,7 @@ cite img {
 
 /* - Social Icons - */
 .social{
-  min-height: 34px;
-}
+  min-height: 34px; }
 
 ul.social-icons {
   list-style: none;
@@ -1429,6 +1472,8 @@ img {
   width: 217px;
   height: 8px;
   position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
   z-index: 999999 !important;
   text-align: center;
   background: center no-repeat url('../images/divider.svg'); }
