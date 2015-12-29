@@ -18,6 +18,34 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<!-- Modenizr -->
 		<script src="assets/js/modernizr.custom.js"></script>
+
+		<!-- instagram -->
+		<script src="instafeed.min.js"></script>
+		<script type="text/javascript">
+			var template = 
+				'<div class="instaphoto-wrap col-md-3">' +
+				'<div class="instaphoto os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">' +
+					'<a href="{{link}}" class="blog-post">' +
+						'<img src="{{image}}/>"' +
+					'</a>' +
+					'<p>' + '{{caption}}' + '</p>' +
+					'<p>' + '{{location}}' + '</p>' +
+				'</div>' +
+				'</div>'
+				;
+
+		    var feed = new Instafeed({
+		        get: 'user',
+		        userId: 1586731151,
+		        accessToken: '1586731151.467ede5.a41a51852b014a0da422e02d747ab7db',
+		        clientId: 'ec04a3369ea34f65ae1d12537668f34c',
+		        resolution: 'standard_resolution',
+		        limit: 4,
+		        template: template
+		    });
+
+		    feed.run();
+		</script>
 	</head>
 	<body>
 		<nav>
@@ -71,7 +99,7 @@
 						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
 						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
 						<div class="col-md-12 text-center">
-							<button type="button" class="btn btn-success btn-big">HTML RESUME</button>
+							<a href="www.google.com"><button type="button" class="btn btn-success btn-big">HTML RESUME</button></a>
 							<p class="secondary-link">
 								<a href="#">Download Resume</a>
 							</p>
@@ -92,81 +120,9 @@
 							<span class="divider-1 center-block"></span>
 						</div>
 					</header>
-					<div class="col-md-12 margin-top margin-left">
-						<div class="col-md-4 blog-post blog-post-dark small-screen-center-block small-screen-margin-top">
-							<span class="blog-post-featured"></span>
-							<div class="blog-post-image">
-								<a href="blog-single.html">
-									<img src="assets/images/500x350.gif" alt="blog image">
-								</a>
-							</div>
-							<div class="blog-post-info">
-								<a href="#" class="blog-post-title">
-									<h4 class="black text-caps">
-										Victory is a mountain
-									</h4>
-								</a>	
-								<p class="blog-post-description">
-									Dry set a yielding signs a word here firmament divide and this is his to face.
-								</p>
-								<a href="blog-single.html" class="btn btn-link">
-									READ MORE
-								</a>
-								<span class="blog-read-time"> 
-									<i class="icon ion-ios-clock-outline"></i>
-									7 MIN
-								</span>
-							</div>
-						</div>
-						<div class="col-md-4 blog-post blog-post-dark small-screen-center-block small-screen-margin-top">
-							<div class="blog-post-image">
-								<a href="blog-single.html">
-									<img src="assets/images/500x350.gif" alt="blog image">
-								</a>
-							</div>
-							<div class="blog-post-info">
-								<a href="#" class="blog-post-title">
-									<h4 class="black text-caps">
-										A CREATIVE POSTER
-									</h4>
-								</a>	
-								<p class="blog-post-description">
-									Above together. Set great fly  nobody will ever read this whales to, upon wherein. Over.
-								</p>
-								<a href="blog-single.html" class="btn btn-link">
-									READ MORE
-								</a>
-								<span class="blog-read-time"> 
-									<i class="icon ion-ios-clock-outline"></i>
-									3 MIN
-								</span>
-							</div>
-						</div>
-						<div class="col-md-4 blog-post blog-post-dark small-screen-center-block small-screen-margin-top">
-							<div class="blog-post-image">
-								<a href="blog-single.html">
-									<img src="assets/images/500x350.gif" alt="blog image">
-								</a>
-							</div>
-							<div class="blog-post-info">
-								<a href="#" class="blog-post-title">
-									<h4 class="black text-caps">
-										CALL US, MAYBE?
-									</h4>
-								</a>	
-								<p class="blog-post-description">
-									Replenish moveth may light for two fill appear night write some more please said.
-								</p>
-								<a href="blog-single.html" class="btn btn-link">
-									READ MORE
-								</a>
-								<span class="blog-read-time"> 
-									<i class="icon ion-ios-clock-outline"></i>
-									4 MIN
-								</span>
-							</div>
-						</div>
-					</div>
+					<!-- instafeed wrapper -->
+					<div id="instafeed" class="col-md-12 margin-top"></div>
+					<!-- end instafeed wrapper -->
 				</div>
 			</div>
 		</section>

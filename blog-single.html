@@ -18,6 +18,30 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<!-- Modenizr -->
 		<script src="assets/js/modernizr.custom.js"></script>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- TUMBLR API -->
+		<script>
+			$(document).ready(function () {
+				$.ajax({
+					type: 'GET',
+					url: 'http://api.tumblr.com/v2/blog/mollyisdesign.tumblr.com/posts',
+					dataType: 'jsonp', 
+					success: function(data) {
+						data.response.posts.forEach(function(post) {
+							console.log(post);
+
+							if (post.type === "photos") {
+								post.photos.forEach(function (photo) {
+									// apendTo the element but we put body for now
+									$('<img src="' + photo.alt_sizes[1].url + '">').appendTo('body');
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<nav>
