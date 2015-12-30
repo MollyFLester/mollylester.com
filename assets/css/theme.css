@@ -91,6 +91,36 @@ body h4.side-menu-text{
   margin-top: 15px;
 }
 
+body section.aboutme-pic{
+    z-index: 999999 !important;
+    background: url("../images/trial-me.png");
+    height: 500px;
+    top: 0px !important;
+    width: 100%;
+    /* margin-top: -500px; */
+    background-color: white;
+    margin: 0 !important;
+    padding: 0px;
+  }
+
+body div img.skills{
+   height: 196px;
+}
+
+body .container div.margin-top-large{
+  margin-top: 120px;
+}
+
+body .container button.btn-big{
+  font-size: 27px;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px;
+  border-radius: 300px !important;
+  letter-spacing: .5px;
+  background-color: #FF475B !important;
+  }
 
 /* GENERAL TYPOGRAPHY RULES */
 /* ===================================== */
@@ -110,13 +140,19 @@ body h4.side-menu-text{
 .text-white{
   color: white;
 }
+p.text-block{
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 26px;
+  font-weight: 300;
+}
 
 /* - Body typography - */
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   height: 100%;
   position: relative;
   max-width: 100% !important; }
@@ -146,7 +182,9 @@ body p {
   line-height: 24px;
   position: relative;
   z-index: 1;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: .5px; }
 
 p.text-caps{
   font-size: 18px;
@@ -229,12 +267,14 @@ object {
 }
 
 .instaphoto-wrap div p{
-  margin-top: 12px;
+  padding: 35px 5px 35px 5px;
+  background-color: #F2F2F2;
   margin-bottom: 12px;
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   text-transform: lowercase;
   text-align: center;
+  line-height: 16px;
 }
 
 /* - Links - */
@@ -605,6 +645,11 @@ header.nav-top {
   padding: 50px 0px 70px 0px;
   z-index: 9 !important; }
 
+header.aboutme {
+  position: relative;
+  padding: 50px 0px 116px 0px;
+  z-index: 9 !important; }
+
 @media (max-width: 661px) {
   .nav-top img {
     margin-top: 24px !important;
@@ -945,7 +990,7 @@ header {
   .section.section-dark {
     background-color: #fdfdfd; }
   .section.section-light {
-    background-color: #f9f9f9; }
+    background-color: white; }
   .section.section-background-pattern {
     background-image: url("../images/background-pattern.png");
     padding-top: 0 !important; }
@@ -3880,13 +3925,12 @@ img {
 
 .btn-big{
   margin-top: 40px;
-  width: 240px;
-  height: 45px;
-  font-weight: 900 !important;
+  width: 356px;
+  height: 67px;
 }
 
 .secondary-link{
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .btn-default {
@@ -4577,7 +4621,7 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
   display: inline-block;
   height: 100%;
   width: 100%;
-  color: #B17461;
+  color: #FFD3CA;
   font-size: 30px;
   font-family: arial;
   background-image: linear-gradient(#FF475B, #FF475B);
@@ -4585,6 +4629,7 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
   background-repeat: no-repeat;
   background-size: 0% 0%;
   transition: background-size .5s;
+  text-transform: uppercase;
 }
 
 .grid .caption_transition_blue{
@@ -4597,18 +4642,17 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
   height: 100%;
   opacity: 0;
   color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.20s ease-in-out;
 }
 
 .grid figcaption .caption_text:hover{
   opacity: 1;
 }
 
-.grid figcaption h3{
+.grid figcaption h2{
   display: inline-block;
-  width: 100%;
-  height: 100%;
   line-height: 10px;
+  color:#FFD3CA !important;
   -ms-transform: translate(0px,70px); /* IE 9 */
   -webkit-transform: translate(0px,70px); /* Safari */
   transform: translate(0px,70px); /* Standard syntax */

@@ -25,11 +25,10 @@
 			var template = 
 				'<div class="instaphoto-wrap col-md-3">' +
 				'<div class="instaphoto os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">' +
-					'<a href="{{link}}" class="blog-post">' +
+					'<a href="{{link}}">' +
 						'<img src="{{image}}/>"' +
 					'</a>' +
 					'<p>' + '{{caption}}' + '</p>' +
-					'<p>' + '{{location}}' + '</p>' +
 				'</div>' +
 				'</div>'
 				;
@@ -50,25 +49,22 @@
 	<body>
 		<nav>
 			<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right text-left" id="side-menu">
-				<!-- LOGO -->
-				<img src="assets/images/logo/logo-dark.png" alt="Image" class="logo">
 				<!-- CLOSE BUTTON -->
 				<a href="#" class="menu-close-btn">
-					<i class="icon ion-ios-close-outline big"></i>
+					<img src="assets/images/close_button.svg" alt="close button"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="blog-single.html">BLOG</a></li>
+					<li><a href="index.html"><h4 class="side-menu-text text-left">HOME</h4></a></li>
+					<li><a href="about.html"><h4 class="side-menu-text text-left">ABOUT</h4></a></li>
+					<li><a href="blog-single.html"><h4 class="side-menu-text text-left">RESUME</h4></a></li>
 					<!-- KEEP FOR GRID--> 
 					<div class="expand-content"></div>
-					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 				<!-- End navbar-nav -->
 			<p class="copyright">2015 © MOLLY LESTER</p>
 			</div>
 		</nav>
-		<header class="nav-top">
+		<header class="nav-top aboutme">
 			<div class="container">
 				<nav id="nav" class="navbar navbar-default navbar-header" role="navigation">
 					<button class="toggle-menu menu-right pull-right push-body nav-icon">
@@ -80,24 +76,71 @@
 				</nav>
 			</div>
 		</header>
+		<section class="section aboutme-pic">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 margin-bottom center-block">
+						<img src="assets/images/just_me.png" class="center-block drop-shadow" alt="My Picture"/>
+					</div>
+				</div>
+			</div>
+		</section>	
 		<section class="section section-light">
 			<div class="container">
 				<div class="row">
 					<header>
 						<div class="col-md-12 text-center margin-bottom">
-							<h2 class="black text-caps">
-								HEY THERE
+							<h2 class="text-blue text-caps">
+								About Me
 							</h2>
 							<p class="text-caps margin-top">
 								Some fun facts
 							</p>
 							<span class="divider-1 center-block margin-top"></span>
-							<span class="divider-1 center-block"></span>
 						</div>
 					</header>
 					<div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
-						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-						<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
+						<p class="text-block margin-bottom">This is the basic profile of one miss molly lester. The answer is molly is fantastic, and her profile is not going to be too long, or too short. You’ve got thirty seconds to convince me not to kill you. Spike has the worst hair cut I have ever seen. Bleached...really? Buffy the Vampire is the best thing I have seen in awhile. I do really enjoy this show. Jessica Jones was still better, I guess. You can’t beat David Tennant as a villian.</p>
+						<p class="text-block">You’ve got thirty seconds to convince me not to kill you. Spike has the worst hair cut I have ever seen. Bleached...really? Buffy the Vampire is the best thing I have seen in awhile. I do really enjoy this show. Jessica Jones was still better, I guess. You can’t beat David Tennant as a villian.</p>
+						<div class="col-md-12 text-center margin-top-large">
+							<p class="text-caps">Skills</p>
+						</div>
+						<div class="col-md-3 margin-top">
+							<img src="assets/images/skills/strategy.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-top">
+							<img src="assets/images/skills/research.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-top">
+							<img src="assets/images/skills/userflow.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-top">
+							<img src="assets/images/skills/wireframing.svg" class="skills"/>
+						</div>
+						<div class="col-md-3">
+							<img src="assets/images/skills/usability.svg" class="skills"/>
+						</div>
+						<div class="col-md-3">
+							<img src="assets/images/skills/prototyping.svg" class="skills"/>
+						</div>
+						<div class="col-md-3">
+							<img src="assets/images/skills/visual.svg" class="skills"/>
+						</div>
+						<div class="col-md-3">
+							<img src="assets/images/skills/branding.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-bottom">
+							<img src="assets/images/skills/responsive.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-bottom">
+							<img src="assets/images/skills/html.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-bottom">
+							<img src="assets/images/skills/css.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-bottom">
+							<img src="assets/images/skills/js.svg" class="skills"/>
+						</div>
 						<div class="col-md-12 text-center">
 							<a href="www.google.com"><button type="button" class="btn btn-success btn-big">HTML RESUME</button></a>
 							<p class="secondary-link">
@@ -113,11 +156,10 @@
 				<div class="row">
 					<header>
 						<div class="col-md-12 text-center margin-bottom">
-							<h2 class="black text-caps">
+							<h2 class="text-blue text-caps">
 								My Feed
 							</h2>
 							<span class="divider-1 center-block margin-top"></span>
-							<span class="divider-1 center-block"></span>
 						</div>
 					</header>
 					<!-- instafeed wrapper -->
@@ -125,41 +167,18 @@
 					<!-- end instafeed wrapper -->
 				</div>
 			</div>
-		</section>
-		<section class="section banner background-pattern-2">
+		</section>	
+		<section class="section banner" style="background-image: url("assets/images/banner.svg");">
 			<div class="container">
 				<div class="row">
 					<header>
 						<div class="col-md-12 text-center">
 							<h2 class="black super text-caps text-white">
+								<a href="mailto:molly.f.lester@gmail.com" class="mailto">
 								DROP A LINE
+								</a>
 							</h2>
-							<i class="icon ion-ios-more-outline text-primary hyper threedots"></i>
-							<p class="text-white lead">I'd love talk to about design, art, and corgis.</p>
-								<!-- CONTACT FORM -->
-								<div class="col-md-8 col-md-offset-2 margin-top">
-									<form id="contact_form" class="contact-form text-center" method="POST">
-										<div class="col-md-12 form-input-icon">
-											<i class="icon ion-ios-person"></i>
-											<input id="name" name="name" type="text" placeholder="Name" required>
-										</div>
-										<div class="col-md-12 form-input-icon">
-											<i class="icon ion-at"></i>
-											<input id="email" name="email" type="email" placeholder="E-mail" required>
-										</div>
-										<div class="col-md-12 form-textarea-icon">
-											<i class="icon ion-edit"></i>
-											<textarea id="message" name="message" placeholder="Your Message" required></textarea>
-										</div>
-										<div class="col-md-12">
-											<p class="text-white tiny required-message">
-												* Please fill all the fields
-											</p>
-											<input type="submit" class="contact-form-submit btn btn-success" value="SEND">
-										</div>
-										<div id="messages" class="col-md-12"></div>
-									</form>
-								</div>
+							<p class="text-caps margin-top">I would love to chat with you</p>
 						</div>
 					</header>
 				</div>
@@ -169,10 +188,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="assets/images/logo/logo.png" width="80" alt="Footer logo" class="center-block margin-top margin-bottom go-top">
 						<div class="col-md-8 col-md-offset-2 text-center margin-top margin-bottom">
 							<p class="text-white">
-								<a href="blog-single.html" class="link-dark-bg">NEWEST BLOG POST</a> | Hey there! Let's talk about corgis
+								<strong>NEWEST BLOG POST</strong>  |  <a href="blog-single.html" class="link-dark-bg">Hey there! Let's talk about corgis </a>
 							</p>
 						</div>
 						<div class="col-md-12">
@@ -220,5 +238,6 @@
 		</footer>
 		<script src="assets/js/packages.min.js"></script>
 		<script src="assets/js/theme.min.js"></script>
+		<script src="assets/js/personal.js"></script>
 	</body>
 </html>
