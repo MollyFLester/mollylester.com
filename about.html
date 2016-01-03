@@ -22,16 +22,6 @@
 		<!-- instagram -->
 		<script src="instafeed.min.js"></script>
 		<script type="text/javascript">
-			var template = 
-				'<div class="instaphoto-wrap col-md-3">' +
-				'<div class="instaphoto os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">' +
-					'<a href="{{link}}">' +
-						'<img src="{{image}}/>"' +
-					'</a>' +
-					'<p>' + '{{caption}}' + '</p>' +
-				'</div>' +
-				'</div>'
-				;
 
 		    var feed = new Instafeed({
 		        get: 'user',
@@ -40,7 +30,14 @@
 		        clientId: 'ec04a3369ea34f65ae1d12537668f34c',
 		        resolution: 'standard_resolution',
 		        limit: 4,
-		        template: template
+		        template: '<div class="instaphoto-wrap col-md-3">' +
+				'<div class="instaphoto os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">' +
+					'<a href="{{link}}">' +
+						'<img src="{{image}}/>"' +
+					'</a>' +
+					'<p>' + '{{caption}}' + '</p>' +
+				'</div>' +
+				'</div>'
 		    });
 
 		    feed.run();
@@ -54,9 +51,9 @@
 					<img src="assets/images/close_button.svg" alt="close button"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h4 class="side-menu-text text-left">HOME</h4></a></li>
-					<li><a href="about.html"><h4 class="side-menu-text text-left">ABOUT</h4></a></li>
-					<li><a href="blog-single.html"><h4 class="side-menu-text text-left">RESUME</h4></a></li>
+					<li><a href="index.html"><h3 class="side-menu-text text-left">HOME</h3></a></li>
+					<li><a href="about.html"><h3 class="side-menu-text text-left">ABOUT</h3></a></li>
+					<li><a href="assets/images/Resume_2015_print.pdf" target="_blank"><h3 class="side-menu-text text-left">RESUME</h3></a></li>
 					<!-- KEEP FOR GRID--> 
 					<div class="expand-content"></div>
 				</ul>
@@ -66,21 +63,21 @@
 		</nav>
 		<header class="nav-top aboutme">
 			<div class="container">
-				<nav id="nav" class="navbar navbar-default navbar-header" role="navigation">
+				<nav id="nav" class="navbar navbar-default about-me- nav navbar-header" role="navigation">
 					<button class="toggle-menu menu-right pull-right push-body nav-icon">
 						<span></span>
 						<span></span>
 						<span></span>
 					</button>
-					<img src="assets/images/logo/logo.png" alt="Image" width="135" class="center-block">
+					<img src="assets/images/hello.svg" alt="Hello" width="300" class="center-block os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.7s">
 				</nav>
 			</div>
 		</header>
-		<section class="section aboutme-pic">
+		<section class="section aboutme-pic os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 margin-bottom center-block">
-						<img src="assets/images/just_me.png" class="center-block drop-shadow" alt="My Picture"/>
+					<div class="col-md-9 margin-bottom center-block">
+						<img src="assets/images/about_me_pic.jpg" class="center-block drop-shadow" alt="My Picture"/>
 					</div>
 				</div>
 			</div>
@@ -91,17 +88,16 @@
 					<header>
 						<div class="col-md-12 text-center margin-bottom">
 							<h2 class="text-blue text-caps">
-								About Me
+								About Moi
 							</h2>
-							<p class="text-caps margin-top">
-								Some fun facts
-							</p>
 							<span class="divider-1 center-block margin-top"></span>
 						</div>
 					</header>
 					<div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
-						<p class="text-block margin-bottom">This is the basic profile of one miss molly lester. The answer is molly is fantastic, and her profile is not going to be too long, or too short. You’ve got thirty seconds to convince me not to kill you. Spike has the worst hair cut I have ever seen. Bleached...really? Buffy the Vampire is the best thing I have seen in awhile. I do really enjoy this show. Jessica Jones was still better, I guess. You can’t beat David Tennant as a villian.</p>
-						<p class="text-block">You’ve got thirty seconds to convince me not to kill you. Spike has the worst hair cut I have ever seen. Bleached...really? Buffy the Vampire is the best thing I have seen in awhile. I do really enjoy this show. Jessica Jones was still better, I guess. You can’t beat David Tennant as a villian.</p>
+						<p class="text-block margin-bottom">Hey there! My name is Molly Lester and I’m a UX/UI Designer. I hail from a little known city outside of Detroit called Farmington Hills. After graduating from the University of Michigan with a degree in Art and Design, I became a freelance graphic designer and fell in love with creating engaging user experiences.
+						</p>
+						<p class="text-block margin-bottom">In this quest, I found UX/UI and subsequently DESIGNATION, an intense and immersive UX/UI Bootcamp in the heart of Chicago. There I learned how to transform user insights into strategy and design. After completing the course, I was selected to stay on as a Designer-in-Residence to help facilitate the virtual and in-person curriculum.</p>
+						<p class="text-block margin-bottom">I love taking raw data and turning it something that is not only beautiful, but human. I strive to make my work both delightful and intuitive. I currently live in Chicago and when I’m not whiling away the hours on pixel perfection, I enjoy laser tag, large caprese salads, and being an all around nerdbot.</p>
 						<div class="col-md-12 text-center margin-top-large">
 							<p class="text-caps">Skills</p>
 						</div>
@@ -142,10 +138,7 @@
 							<img src="assets/images/skills/js.svg" class="skills"/>
 						</div>
 						<div class="col-md-12 text-center">
-							<a href="www.google.com"><button type="button" class="btn btn-success btn-big">HTML RESUME</button></a>
-							<p class="secondary-link">
-								<a href="#">Download Resume</a>
-							</p>
+								<a href="assets/images/Resume_2015_print.pdf" target="_blank"><button type="button" class="btn btn-success btn-big">RESUME</button></a>
 						</div>
 					</div>
 				</div>
@@ -167,8 +160,8 @@
 					<!-- end instafeed wrapper -->
 				</div>
 			</div>
-		</section>	
-		<section class="section banner" style="background-image: url("assets/images/banner.svg");">
+		</section>
+		<section class="section banner" style="background-image:url('assets/images/banner.svg');">
 			<div class="container">
 				<div class="row">
 					<header>
