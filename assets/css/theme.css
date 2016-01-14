@@ -130,7 +130,7 @@ body .container div.margin-top-large{
   margin-top: 120px;
 }
 
-body .container button.btn-big{
+body .container button.btn-big, button.red-button{
   font-size: 27px;
   font-weight: 600 !important;
   text-transform: uppercase;
@@ -160,6 +160,7 @@ body .container button.btn-big{
 
 .background-color-white{
   margin-top: -270px;
+  z-index: 1;
 }
 
 img.small-icons{
@@ -191,19 +192,20 @@ body h3.quote_block{
   text-transform: none;
   font-weight: 400;
   line-height: 40px;
+  padding-bottom: 15px;
 }
 
 body .persona{
-  height: 680px;
+  height: 752px;
 }
 
 body .persona_image{
   width: 100%;
-  height: 285px;
+  height: 300px;
 }
 
 body .persona_arrow{
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .persona_icon{
@@ -252,6 +254,50 @@ body .opClass_pic{
   background-size: 100%;
 }
 
+.mid_block{
+  margin-top: -90px;
+  padding-top: 110px;
+}
+
+.single-mission-color{
+  width: 5%;
+}
+
+.double-mission-color{
+  width: 14%;
+}
+
+/* CAROUSEL */
+/* ===================================== */
+
+body {width: 100%; background: #fff;}
+
+.carousel-control {
+  top: 50% !important;
+}
+.carousel-inner {
+  width: 980px;
+  height: 500px;
+}
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  color: #36373F !important;
+  border: none !important;
+  font-size: 96px;
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-top: -35px;
+}
+
+a.carousel-control.left:hover{
+  opacity: 1;
+}
+
+body .wireframe-text p{
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 25px;
+}
 
 /* GENERAL TYPOGRAPHY RULES */
 /* ===================================== */
@@ -276,11 +322,17 @@ body .opClass_pic{
   color: #FF475B;
 }
 
+.caption_line{
+  margin-top: 10px;
+  font-size: 10px;
+}
+
 p.text-block{
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 26px;
+  line-height: 32px;
   font-weight: 300;
+  font-size: 20px;
 }
 
 p.pad-top{
@@ -291,6 +343,7 @@ p.pad-top{
   display: inline-block;
   vertical-align: top;
   color: #FF475B;
+  font-size: 21px !important;
   margin-top: 0px !important;
   margin-left: 0px !important;
   padding-left: 15px !important;
@@ -330,6 +383,10 @@ p.principles-margin-bottom{
   margin-bottom: 30px;
 }
 
+h3.section_header_pad{
+  padding-top: 50px !important;
+}
+
 /* - Body typography - */
 body {
   -webkit-font-smoothing: antialiased;
@@ -363,11 +420,11 @@ body h1, h2, h3, h4, h5, h6 {
 
 body p {
   margin: 0;
-  line-height: 24px;
+  line-height: 32px;
   position: relative;
   z-index: 1;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: .5px;
   color: #36373F; }
 
@@ -4177,7 +4234,7 @@ img {
   background-clip: padding-box !important;
   /* stops bg color from leaking outside the border: */ }
   .btn-success:hover {
-    background: #37dd7a !important;
+    background: #36373F !important;
     color: #fff !important; }
 
 .btn-info {
@@ -4962,9 +5019,9 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
 .jumbotron{
   height: 77vh;
   background: url("../images/hero/hubble_hero.png");
-  background-size: 50%;
+  background-size: 70%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 35% 25%;
 }
 
 .jumbotron .container-fluid{
@@ -4978,6 +5035,39 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
   padding-right: 0px;
 }
 
+@media (max-width: 992px) {
+
+  .jumbotron{
+    height: 73vh;
+    background-size: 86%;
+    background-position: 10% 25%;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .jumbotron{
+     height: 64vh;
+    background-size: 94%;
+    background-position: -60% 100%;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .jumbotron{
+    height: 49vh;
+    background-size: 104%;
+    background-position: 260% 100%;
+
+
+  }
+
+}
 
 .content > div {
   z-index: 10 !important;
@@ -5126,7 +5216,8 @@ p.dummy-text:nth-child(3) {
   display: block !important;
   opacity: 1; }
 
-@media screen and (max-width: 1000px) {
+/*foremerly 1000px */
+@media screen and (max-width: 1200px) {
   .grid figure,
   .grid .placeholder {
     width: 240px;
