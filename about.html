@@ -13,6 +13,7 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- GOOGLE FONTS -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
 		<!-- CSS FILES -->
 		<link rel="stylesheet" href="assets/css/theme.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -20,7 +21,7 @@
 		<script src="assets/js/modernizr.custom.js"></script>
 
 		<!-- instagram -->
-		<script src="instafeed.min.js"></script>
+		<script src="assets/js/instafeed.min.js"></script>
 		<script type="text/javascript">
 
 		    var feed = new Instafeed({
@@ -69,11 +70,11 @@
 						<span></span>
 						<span></span>
 					</button>
-					<img src="assets/images/hello.svg" alt="Hello" width="300" class="center-block os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.7s">
+					<img src="assets/images/hello.svg" alt="Hello" width="300" class="center-block os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">
 				</nav>
 			</div>
 		</header>
-		<section class="section aboutme-pic os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
+		<section class="section aboutme-pic os-animation" data-os-animation="fadeInUp">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9 margin-bottom center-block">
@@ -129,16 +130,16 @@
 							<img src="assets/images/skills/responsive.svg" class="skills"/>
 						</div>
 						<div class="col-md-3 margin-bottom">
+							<img src="assets/images/skills/design-thinking.svg" class="skills"/>
+						</div>
+						<div class="col-md-3 margin-bottom">
 							<img src="assets/images/skills/html.svg" class="skills"/>
 						</div>
 						<div class="col-md-3 margin-bottom">
 							<img src="assets/images/skills/css.svg" class="skills"/>
 						</div>
-						<div class="col-md-3 margin-bottom">
-							<img src="assets/images/skills/js.svg" class="skills"/>
-						</div>
 						<div class="col-md-12 text-center">
-								<a href="assets/images/Resume_2015_print.pdf" target="_blank"><button type="button" class="btn btn-success btn-big red-button">RESUME</button></a>
+								<a href="assets/images/Resume_2015_print.pdf" target="_blank"><button type="button" class="btn btn-success btn-big red-button">PDF RESUME</button></a>
 						</div>
 					</div>
 				</div>
@@ -161,7 +162,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section banner" style="background-image:url('assets/images/banner.svg');">
+		<section class="section banner" id="banner">
 			<div class="container">
 				<div class="row">
 					<header>
@@ -179,17 +180,7 @@
 		</section>
 		<footer class="footer-dark">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-8 col-md-offset-2 text-center margin-top margin-bottom">
-							<p class="text-white">
-								<strong>NEWEST BLOG POST</strong>  |  <a href="blog-single.html" class="link-dark-bg">Hey there! Let's talk about corgis </a>
-							</p>
-						</div>
-						<div class="col-md-12">
-							<hr class="copyright-hr">
-						</div>
-					</div>
+				<div class="row social-media">
 					<div class="col-md-4 text-left copyright">
 						<p class="text-white small">
 							COPYRIGHTS © 2015
@@ -223,7 +214,7 @@
 					</div>
 					<div class="col-md-4 copyright text-right">
 						<p class="text-white small">
-							HAVE A GREAT DAY
+							KEEP MOVING FORWARD
 						</p>
 					</div>
 				</div>

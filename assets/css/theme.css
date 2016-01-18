@@ -86,7 +86,8 @@ This is the file you need to edit to change the look of the theme.
 
 .icon-block-vertical p{
   padding: 0px 25px;
-  line-height: 24px;
+  line-height: 26px;
+  font-size: 14px;
 }
 
 .icon-block-vertical h4{
@@ -145,8 +146,13 @@ body .container button.btn-big, button.red-button{
   background-color: #9BC5D9 !important;
 }
 
+.background-color-light-pink{
+  background-color: #FFC9C0 !important;
+}
+
 .background-color-red{
   background-color: #FF475B !important;
+  padding: 50px 0px 100px 0px;
 }
 
 .background-color-blue{
@@ -158,9 +164,33 @@ body .container button.btn-big, button.red-button{
   padding-bottom: 270px;
 }
 
+.background-color-gray-noOverlay{
+  background-color: #F2F2F2 !important;
+  padding-bottom: 75px;
+}
+
+.background-color-gray-bottom{
+  z-index:-1 !important;
+  padding-top: 270px;
+}
+
+.background-color-white-noOverlay{
+  background-color: #FFFFFF !important;
+  padding-bottom: 50px;
+  margin-bottom: -250px;
+}
+
 .background-color-white{
   margin-top: -270px;
   z-index: 1;
+}
+
+.background-color-white-bottom{
+  background-color: #FFFFFF;
+}
+
+.background-color-none{
+  margin-bottom: -250px !important;
 }
 
 img.small-icons{
@@ -259,12 +289,23 @@ body .opClass_pic{
   padding-top: 110px;
 }
 
+.mid_block2{
+  margin-top: -90px;
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
 .single-mission-color{
   width: 5%;
 }
 
 .double-mission-color{
   width: 14%;
+}
+
+.divider_gray{
+  width: 17%;
+  padding-top: 4px;
 }
 
 /* CAROUSEL */
@@ -275,18 +316,28 @@ body {width: 100%; background: #fff;}
 .carousel-control {
   top: 50% !important;
 }
+
+#myCarousel5 .carousel-control {
+  top: 60% !important;
+}
+
+#myCarousel6 .carousel-control {
+  top: 58% !important;
+}
+
 .carousel-inner {
   width: 980px;
-  height: 500px;
+  height: 100%;
 }
+
 .carousel-control.left, .carousel-control.right {
   background: none !important;
   color: #36373F !important;
   border: none !important;
   font-size: 96px;
   margin-left: -100px;
-  margin-right: -100px;
-  margin-top: -35px;
+  margin-right: -94px;
+  margin-top: -120px;
 }
 
 a.carousel-control.left:hover{
@@ -298,6 +349,20 @@ body .wireframe-text p{
   font-size: 14px;
   line-height: 25px;
 }
+
+.left-side-landing-txt{
+  top:-200px;
+}
+
+.right-side-landing-txt{
+  top:-100px;
+}
+
+.myCarousel5,.myCarousel6{
+  height: 500px;
+}
+
+
 
 /* GENERAL TYPOGRAPHY RULES */
 /* ===================================== */
@@ -330,9 +395,9 @@ body .wireframe-text p{
 p.text-block{
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 32px;
+  line-height: 28px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 p.pad-top{
@@ -347,6 +412,11 @@ p.pad-top{
   margin-top: 0px !important;
   margin-left: 0px !important;
   padding-left: 15px !important;
+}
+
+.question-txt {
+    display: inline-block;
+    padding-left: 20px !important;
 }
 
 .principles-txt{
@@ -375,6 +445,15 @@ p.numbers{
   margin-bottom: 10px;
 }
 
+span.numbers{
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.numbers p .keytakeaway-phrases{
+  padding-left: 30px !important;
+}
+
 p.principles{
   padding-left: 40px;
 }
@@ -384,7 +463,19 @@ p.principles-margin-bottom{
 }
 
 h3.section_header_pad{
-  padding-top: 50px !important;
+  padding-top: 45px !important;
+}
+
+.lowercase{
+  text-transform: lowercase !important;
+}
+
+.bodytxt-margin-bottom{
+  margin-bottom: 10px !important;
+}
+
+.questions{
+  width: 30px !important;
 }
 
 /* - Body typography - */
@@ -547,7 +638,7 @@ a {
 a.border-link {
   text-decoration: none;
   color: #FF475B ;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   /* The bottom border distance  */
   border-bottom: 1px solid #FF475B;
   -moz-transition: 0.2s;
@@ -825,7 +916,7 @@ pre, code, var, kbd, samp, tt, dir, listing, plaintext, xmp, abbr, acronym, q {
   overflow-y: visible;
   display: block;
   visibility: visible;
-  background: #f8f8f8;
+  background: #ffffff;
   background-size: cover;
   padding-top: 30px;
   padding-left: 50px; }
@@ -1135,8 +1226,8 @@ header.nav-top-video ul.social-icons {
 
 footer {
   width: 100%;
-  min-height: 183px;
-  height: 183px;
+  min-height: 100px;
+  height: 100px;
   position: relative;
   bottom: 0;
   left: 0;
@@ -1151,6 +1242,10 @@ footer .icon-block-title {
 
 footer .go-top{
   cursor: pointer;
+}
+
+footer .social-media{
+  padding-top: 38px;
 }
 
 /* -  Copyright - */
@@ -1504,6 +1599,7 @@ cite img {
 /* - Banners - */
 .banner {
   margin-top: -55.14px;
+  padding: 96px 0 79px 0px;
   }
 
 .banner h4 {
@@ -5022,6 +5118,22 @@ box-shadow: -3px 5px 13px 3px rgba(0,0,0,0.06)
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 35% 25%;
+}
+
+.jumbotron2{
+  background: url("../images/techweek/mockup_header.png");
+  height: 77vh;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 38% 53%;
+}
+
+.jumbotron3{
+  background: url("../images/sidewalk/sidewalk_mockup_hero.png");
+  height: 77vh;
+  background-size: 67%;
+  background-repeat: no-repeat;
+  background-position: 38% 53%;
 }
 
 .jumbotron .container-fluid{
