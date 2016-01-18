@@ -152,7 +152,6 @@ body .container button.btn-big, button.red-button{
 
 .background-color-red{
   background-color: #FF475B !important;
-  padding: 50px 0px 100px 0px;
 }
 
 .background-color-blue{
@@ -287,6 +286,7 @@ body .opClass_pic{
 .mid_block{
   margin-top: -90px;
   padding-top: 110px;
+  padding-bottom: 135px;
 }
 
 .mid_block2{
@@ -314,12 +314,13 @@ body .opClass_pic{
 body {width: 100%; background: #fff;}
 
 .carousel-control {
-  top: 50% !important;
+  top: 52% !important;
 }
 
-#myCarousel5 .carousel-control {
+#myCarousel5 .carousel-control, #myCarousel .carousel-control, #myCarousel2 .carousel-control  {
   top: 60% !important;
 }
+
 
 #myCarousel6 .carousel-control {
   top: 58% !important;
@@ -360,6 +361,14 @@ body .wireframe-text p{
 
 .myCarousel5,.myCarousel6{
   height: 500px;
+}
+
+.hubbleCarousel{
+  height: 550px !important;
+}
+
+.hubbleCarousel2{
+  height: 675px !important;
 }
 
 
