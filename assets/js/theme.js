@@ -286,3 +286,31 @@ jQuery(document).ready(function( $ ) {
     });
 
 });
+
+ // Load proper project page
+// ===============================
+var projects = $('.flip-trigger');
+
+projects.click(function(){
+  var p = $(this).data('project');
+  console.log(p);
+
+  $.ajax({
+    url: 'projects/' + p + '.php',
+    beforeSend: function(){
+      $('#content-wrapper').empty();
+      console.log('cleaned');
+    }
+  })
+  .done(function(d){
+    console.log(d);
+    $('#content-wrapper').html(d);
+  })
+  .fail(function(){
+    console.log('fail');
+  })
+  .always(function(){
+    console.log('done');
+  })
+});
+
