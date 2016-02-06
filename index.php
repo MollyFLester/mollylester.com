@@ -12,7 +12,7 @@
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- GOOGLE FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
 		<!-- CSS FILES -->
 		<link rel="stylesheet" href="assets/css/theme.css" />
@@ -29,8 +29,8 @@
 					<img src="assets/images/close_button.svg" alt="close button"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h3 class="side-menu-text text-left">HOME</h3></a></li>
-					<li><a href="about.html"><h3 class="side-menu-text text-left">ABOUT</h3></a></li>
+					<li><a href="/" disabled><h3 class="side-menu-text text-left">HOME</h3></a></li>
+					<li><a href="/about"><h3 class="side-menu-text text-left">ABOUT</h3></a></li>
 					<li><a href="assets/images/Resume_2015_print.pdf" target="_blank"><h3 class="side-menu-text text-left">RESUME</h3></a></li>
 					<!-- KEEP FOR GRID--> 
 					<div class="expand-content"></div>
@@ -42,18 +42,24 @@
 		<header class="nav-top">
 			<div class="container">
 				<nav id="nav" class="navbar navbar-default navbar-header" role="navigation">
-					<button class="toggle-menu menu-right pull-right push-body nav-icon">
+					<button class="toggle-menu menu-right pull-right push-body nav-icon jPushMenuBtn">
 						<span></span>
 						<span></span>
 						<span></span>
 					</button>
-					<img id="logo" src="assets/images/logo/logo_pink.png" alt="Image" class="center-block os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s"/>
-					<h3 class="text-blue os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0.4s">UX / UI Designer</h3>
+  				<div class="row-fluid">
+				    <div class="col-sm-8 col-sm-offset-2">
+							<img id="logo" src="assets/images/logo/logo_pink.png" alt="Image" class="center-block os-animation animated fadeInUp" data-os-animation="fadeInUp" data-os-animation-delay="0s" style="animation-delay: 0s;">
+						</div>
+    				<div class="UX-UI">
+							<h3 class="text-blue os-animation animated fadeInDown col-sm-8 col-sm-offset-2" data-os-animation="fadeInDown" data-os-animation-delay="0.4s" style="animation-delay: 0.4s;">UX / UI Designer</h3>
+       			</div>
+ 					</div>
 				</nav>
 			</div>
 		</header>
 		<section class="grid-section grid3d vertical" id="grid3d">
-			<div class="grid-wrap container">
+			<div class="grid-wrap container align-left-small">
 				<div class="grid">
 					<div class="flip-trigger col-md-4 col-sm-6 col-xs-12 os-animation small-screen-center" data-os-animation="fadeInUp" data-os-animation-delay="1s" data-project="hubble">
 						<figure>
@@ -108,6 +114,7 @@
 				</span>
 			</div>
 		</section>
+
 		<section class="section section-dark about-section">
 			<div class="container">
 				<div class="row">
@@ -148,7 +155,7 @@
 		</section>
 		<section class="section banner" id="banner">
 			<div class="container">
-				<div class="row">
+				<div class="row drop-line">
 					<header>
 						<div class="col-md-12 text-center">
 							<h2 class="black super text-caps text-white">
@@ -165,14 +172,14 @@
 		<footer class="footer-dark">
 			<div class="container">
 				<div class="row social-media">
-					<div class="col-md-4 text-left copyright">
+					<div class="col-md-4 col-sm-4 col-xs-3 text-left copyright copyright-text">
 						<p class="text-white small">
-							COPYRIGHTS © 2015
-							 <i class="icon ion-heart text-primary"></i> MOLLY LESTER
+							COPYRIGHT © 2015
+							 <i class="icon ion-heart text-primary"></i> MOLLY
 						</p>
 					</div>
 					<!-- SOCIAL MEDIA BUTTONS -->
-					<div class="col-md-4 text-center social">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center social">
 						<ul class="social-icons">
 							<li>
 								<a href="https://www.behance.net/molly_lester">
@@ -196,7 +203,7 @@
 							</li>
 						</ul >
 					</div>
-					<div class="col-md-4 copyright text-right">
+					<div class="col-md-4 col-sm-4 col-xs-3 copyright text-right">
 						<p class="text-white small">
 							KEEP MOVING FORWARD
 						</p>
@@ -204,9 +211,10 @@
 				</div>
 			</div>
 		</footer>
-		<script src="assets/js/packages.min.js"></script>
+		<script src="assets/js/packages.js"></script>
 		<script src="assets/js/theme.js"></script>
 		<script src="assets/js/personal.js"></script>
+		<script src="assets/js/jquery.mobile.custom.min.js"></script>
 		<!-- Required script for the 3D Grid Effect to run -->
 		<script>
 		    new grid3D( document.getElementById( 'grid3d' ) );

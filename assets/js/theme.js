@@ -11,6 +11,11 @@ Main Theme JS file
 
 'use strict';
 
+var projectSlugs = [
+  "hubble",
+  "techweek",
+  "sidewalk"
+];
 
 
 jQuery(document).ready(function( $ ) {
@@ -285,32 +290,62 @@ jQuery(document).ready(function( $ ) {
         $('html, body').animate({scrollTop: 0}, 300);
     });
 
+     // Load proper project page
+    // ===============================
+    $('.flip-trigger').click(function(){
+      var p = $(this).data('project');
+      getProject(p, true);
+    });
+
+     // Change URL on Close Content
+    // ===============================
+    $('.close-content').click(function(e){
+        history.pushState('home', null, '/');
+        document.title = "Molly Lester - UI/UX Designer";
+    });
+
+    if(window.location.pathname !== "/"){
+        getProject(window.location.pathname.slice(1), false);
+    }
 });
 
- // Load proper project page
-// ===============================
-var projects = $('.flip-trigger');
-
-projects.click(function(){
-  var p = $(this).data('project');
-  console.log(p);
-
+function getProject(name, push){
   $.ajax({
-    url: 'projects/' + p + '.php',
+    url: 'projects/' + name + '.php',
     beforeSend: function(){
-      $('#content-wrapper').empty();
-      console.log('cleaned');
+      $('#content-wrapper')
+        .removeClass('show')
+        .empty();
     }
   })
   .done(function(d){
-    console.log(d);
-    $('#content-wrapper').html(d);
+    $('#content-wrapper')
+      .html(d)
+    //CHANGE LOADING TIME (2000ms DEFAULT)
+    setTimeout(function(){
+        $('.content, #content-wrapper').addClass('show');
+
+        // FAILED SCROLLSPY CODE
+        // $('.subnav-links').click(function(e){
+        //     var x = $(e.target).data('scroll');
+        //     var s = $('#' + x).offset().top;
+        //     $('.content').scrollTop(s);
+        // });
+    }, 2000);
+    if(push){
+        history.pushState(name, null, name);
+        document.title = "Molly Lester - " + name.toUpperCase();
+    }
   })
   .fail(function(){
     console.log('fail');
-  })
-  .always(function(){
-    console.log('done');
-  })
-});
+  });
+}
 
+window.onpopstate = function(event){
+    if(event.state == "home"){
+        $('.close-content').click();
+    } else {
+        getProject(event.state);
+    }
+};

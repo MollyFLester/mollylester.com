@@ -12,7 +12,7 @@
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- GOOGLE FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
 		<!-- CSS FILES -->
 		<link rel="stylesheet" href="assets/css/theme.css" />
@@ -31,7 +31,7 @@
 		        clientId: 'ec04a3369ea34f65ae1d12537668f34c',
 		        resolution: 'standard_resolution',
 		        limit: 4,
-		        template: '<div class="instaphoto-wrap col-md-3">' +
+		        template: '<div class="instaphoto-wrap col-md-3 col-md-offset-0 col-xs-8 col-xs-offset-2">' +
 				'<div class="instaphoto os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">' +
 					'<a href="{{link}}">' +
 						'<img src="{{image}}/>"' +
@@ -52,8 +52,8 @@
 					<img src="assets/images/close_button.svg" alt="close button"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h3 class="side-menu-text text-left">HOME</h3></a></li>
-					<li><a href="about.html"><h3 class="side-menu-text text-left">ABOUT</h3></a></li>
+					<li><a href="/"><h3 class="side-menu-text text-left">HOME</h3></a></li>
+					<li><a href="/about" disabled><h3 class="side-menu-text text-left">ABOUT</h3></a></li>
 					<li><a href="assets/images/Resume_2015_print.pdf" target="_blank"><h3 class="side-menu-text text-left">RESUME</h3></a></li>
 					<!-- KEEP FOR GRID--> 
 					<div class="expand-content"></div>
@@ -64,7 +64,7 @@
 		</nav>
 		<header class="nav-top aboutme">
 			<div class="container">
-				<nav id="nav" class="navbar navbar-default about-me- nav navbar-header" role="navigation">
+				<nav id="nav" class="navbar navbar-default about-me-nav navbar-header" role="navigation">
 					<button class="toggle-menu menu-right pull-right push-body nav-icon">
 						<span></span>
 						<span></span>
@@ -102,41 +102,41 @@
 						<div class="col-md-12 text-center margin-top-large">
 							<p class="text-caps">Skills</p>
 						</div>
-						<div class="col-md-3 margin-top">
-							<img src="assets/images/skills/strategy.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-top">
+							<img src="assets/images/skills/strategy.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-top">
-							<img src="assets/images/skills/research.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-top">
+							<img src="assets/images/skills/research.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-top">
-							<img src="assets/images/skills/userflow.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-top">
+							<img src="assets/images/skills/userflow.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-top">
-							<img src="assets/images/skills/wireframing.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-top">
+							<img src="assets/images/skills/wireframing.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3">
-							<img src="assets/images/skills/usability.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6">
+							<img src="assets/images/skills/usability.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3">
-							<img src="assets/images/skills/prototyping.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6">
+							<img src="assets/images/skills/prototyping.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3">
-							<img src="assets/images/skills/visual.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6">
+							<img src="assets/images/skills/visual.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3">
-							<img src="assets/images/skills/branding.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6">
+							<img src="assets/images/skills/branding.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-bottom">
-							<img src="assets/images/skills/responsive.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-bottom">
+							<img src="assets/images/skills/responsive.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-bottom">
-							<img src="assets/images/skills/design-thinking.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-bottom">
+							<img src="assets/images/skills/design-thinking.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-bottom">
-							<img src="assets/images/skills/html.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-bottom">
+							<img src="assets/images/skills/html.svg" class="skills center-block"/>
 						</div>
-						<div class="col-md-3 margin-bottom">
-							<img src="assets/images/skills/css.svg" class="skills"/>
+						<div class="col-md-3 col-xs-6 margin-bottom">
+							<img src="assets/images/skills/css.svg" class="skills center-block"/>
 						</div>
 						<div class="col-md-12 text-center">
 								<a href="assets/images/Resume_2015_print.pdf" target="_blank"><button type="button" class="btn btn-success btn-big red-button">PDF RESUME</button></a>
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section section-dark">
+		<section class="section section-dark about_section">
 			<div class="container">
 				<div class="row">
 					<header>
@@ -161,10 +161,9 @@
 					<!-- end instafeed wrapper -->
 				</div>
 			</div>
-		</section>
-		<section class="section banner" id="banner">
+		<section class="section banner about_banner" id="banner">
 			<div class="container">
-				<div class="row">
+				<div class="row drop-line">
 					<header>
 						<div class="col-md-12 text-center">
 							<h2 class="black super text-caps text-white">
@@ -181,14 +180,14 @@
 		<footer class="footer-dark">
 			<div class="container">
 				<div class="row social-media">
-					<div class="col-md-4 text-left copyright">
+					<div class="col-md-4 col-sm-4 col-xs-3 text-left copyright copyright-text">
 						<p class="text-white small">
-							COPYRIGHTS © 2015
-							 <i class="icon ion-heart text-primary"></i> MOLLY LESTER
+							COPYRIGHT © 2015
+							 <i class="icon ion-heart text-primary"></i> MOLLY
 						</p>
 					</div>
 					<!-- SOCIAL MEDIA BUTTONS -->
-					<div class="col-md-4 text-center social">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center social">
 						<ul class="social-icons">
 							<li>
 								<a href="https://www.behance.net/molly_lester">
@@ -212,7 +211,7 @@
 							</li>
 						</ul >
 					</div>
-					<div class="col-md-4 copyright text-right">
+					<div class="col-md-4 col-sm-4 col-xs-3 copyright text-right">
 						<p class="text-white small">
 							KEEP MOVING FORWARD
 						</p>
